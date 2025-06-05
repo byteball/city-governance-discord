@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js"
   },
-  "keywords": [],
+  "keywords": ["dag", "discord", "city", "obyte"],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "MIT",
+  "resolutions": {
+    "level-rocksdb": "^4.0.0"
+  },
+  "description": "Watch Obyte City (Governance) and post event notifications on Discord",
+  "dependencies": {
+    "governance_events": "github:byteball/governance_events"
+  }
 }
