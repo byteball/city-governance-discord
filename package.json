@@ -14,6 +14,10 @@
   },
   "description": "Watch Obyte City (Governance) and post event notifications on Discord",
   "dependencies": {
-    "governance_events": "github:byteball/governance_events"
+    "aabot": "git+https://github.com/byteball/aabot.git",
+    "dotenv": "^8.2.0",
+    "governance_events": "git+https://github.com/byteball/governance_events.git",
+    "ocore": "git+https://github.com/byteball/ocore.git",
+    "discord.js": "^12.2.0"
   }
 }

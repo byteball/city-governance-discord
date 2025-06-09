@@ -9,14 +9,14 @@ exports.bNoPassphrase = true;
 
 exports.discord_token = process.env.discord_token;
 exports.discord_channels = [process.env.channel];
-
+exports.testnet = !!process.env.testnet;
 exports.hub = process.env.testnet ? 'obyte.org/bb-test' : 'obyte.org/bb';
 
 exports.explorer_base_url = process.env.testnet ? 'https://testnetexplorer.obyte.org/#' : 'https://explorer.obyte.org/#';
 exports.oswap_base_url = process.env.testnet ? 'https://city.obyte.org/' : 'https://city.obyte.org/';
 
 exports.governance_base_AAs = [
-  'JGGFM55N6626QBQWAYBHMBN6A76TVPK5'
+  'P5SP4B25G3XNX27MXWZBZUPZ5QXSAW7K', // testnet
 ];
 
 exports.token_registry_AA_address = process.env.TOKEN_REGISTRY_AA_ADDRESS;
