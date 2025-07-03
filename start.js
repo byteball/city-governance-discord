@@ -46,6 +46,8 @@ eventBus.on('aa_response', async function (objResponse) {
         const main_aa = assocPoolAAs[governance_aa.main_aa];
 
         const event = await governanceEvents.treatResponseFromGovernanceAA(objResponse, main_aa.asset, governance_aa.main_aa);
+        if (!event.type) return console.log('ignored response with no type: ', event);
+
         governanceDiscord.announceEvent("Obyte City", main_aa.symbol, main_aa.decimals, `https://city.obyte.org`, event);
     } else {
         console.log('ignored response from unknown AA: ' + objResponse.aa_address);
