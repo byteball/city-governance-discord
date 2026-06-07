@@ -18,7 +18,7 @@ exports.oswap_base_url = process.env.testnet ? 'https://city.obyte.org/governanc
 exports.governance_base_AAs = process.env.testnet ? [
   'P5SP4B25G3XNX27MXWZBZUPZ5QXSAW7K', // testnet
 ] : [
-  'JGGFM55N6626QBQWAYBHMBN6A76TVPK5' // mainnet
+  'RPUA6HU7F2A4J2WG6G3U376ITKBGMY4W' // mainnet
 ];
 
 exports.token_registry_AA_address = process.env.TOKEN_REGISTRY_AA_ADDRESS;
